@@ -1,0 +1,32 @@
+<div id="code-header">
+    <div class="row fullWidth">
+        <div class="large-2 columns">
+            <h1>{Code}</h1>
+        </div>
+        <div class="large-4 columns">
+            Filter by: ex. CSS, JavaScript, PHP<br/><br/><input type="text" ng-model="title"/><br/>
+        </div>
+        <div class="large-6 columns"></div>
+    </div>
+    <div class="row fullWidth">
+        <div class="large-8">
+            <dl class="sub-nav" style="display: inline-block; text-align: left; margin-bottom: 0px;">
+                <dd ng-repeat="snip in snippets | filter:title">{{ snip.title }}</dd>
+            </dl>
+        </div>
+    </div>
+</div>
+<br/>
+<div ng-repeat="snip in snippets | filter:title" class="row fullWidth sniprow">
+    <div class="large-2 columns">
+        <h1>{{ snip.title }}</h1>
+        <p style="color: gray;">{{ snip.description }}</p>
+    </div>
+    <div class="large-10 columns">
+        <br/>
+        <img src="{{ snip.code }}" />
+        <br/><br/><br/>
+    </div>
+    <br/><br/>
+    <hr/>
+</div>
