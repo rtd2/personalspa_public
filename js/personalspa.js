@@ -87,7 +87,7 @@ personalApp.controller('aboutController', function ($scope) {
             description:'An authentication demo using Laravel. Includes registration, signin, profile page, and password recovery.',
             technology: ['LAMP', 'HTML', 'CSS'],
             image: 'img/laravelauthentication.png',
-            link: 'rthom.net/#/code',
+            link: '/#/code',
             caption: 'Check out of some of the project over in my code samples:'
         },
         {
