@@ -87,7 +87,7 @@ personalApp.controller('aboutController', function ($scope) {
             description:'An authentication demo using Laravel. Includes registration, signin, profile page, and password recovery.',
             technology: ['LAMP', 'HTML', 'CSS'],
             image: 'img/laravelauthentication.png',
-            link: '/#/code',
+            link: '/personalspa_public/#/code',
             caption: 'Check out of some of the project over in my code samples:'
         },
         {
@@ -116,7 +116,7 @@ personalApp.controller('aboutController', function ($scope) {
             description:'A design prototype I made for a personal site.',
             technology: ['HTML', 'CSS', 'Foundation'],
             image: 'img/designprototype.png',
-            link: '/#/demo'
+            link: '/personalspa_public/#/demo'
         },
         {
             title:'P2P Multiplayer Game',
