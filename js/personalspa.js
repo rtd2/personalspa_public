@@ -116,7 +116,7 @@ personalApp.controller('aboutController', function ($scope) {
             description:'A design prototype I made for a personal site.',
             technology: ['HTML', 'CSS', 'Foundation'],
             image: 'img/designprototype.png',
-            link: 'rthom.net/#/demo'
+            link: '/#/demo'
         },
         {
             title:'P2P Multiplayer Game',
