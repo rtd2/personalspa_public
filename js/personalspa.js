@@ -95,7 +95,7 @@ personalApp.controller('aboutController', function ($scope) {
             technology: ['React', 'HTML', 'CSS', 'JavaScript', 'Bootstrap'],
             image: 'img/p2p.png',
             link: 'https://github.com/rtd2/P2P-Game'
-        }
+        },
         {
             title:'Whose News',
             description:"Whose News is a concept for a news aggregator that provides the news without knowledge of the source. The idea is to cut through bias in the news.",
