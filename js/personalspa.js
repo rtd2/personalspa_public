@@ -98,7 +98,7 @@ personalApp.controller('aboutController', function ($scope) {
         },
         {
             title:'Whose News',
-            description:"Whose News is a concept for a news aggregator that provides the news without knowledge of the source. The idea is to cut through bias in the news.",
+            description:"Whose News is a concept for a news aggregator that provides the news without knowledge of the source. The idea is to present a new perspective.",
             technology: ['HTML', 'CSS', 'JavaScript'],
             image: 'img/whosenews.png',
             link: 'http://whosenews.net/'
