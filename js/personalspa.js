@@ -79,9 +79,30 @@ personalApp.controller('aboutController', function ($scope) {
         $(document).foundation();
     });
 
-    $scope.filters = {title: "Laravel Authentication"};
+    $scope.filters = {title: "Learn the Terminal"};
 
     $scope.projects = [
+        {
+            title:'Learn the Terminal',
+            description:'Learn the Terminal is a terminal simulation in the browser. It started out as a personal project, but developed into a remote collaboration with the goal of introducing non-developer types to the Terminal.',
+            technology: ['HTML', 'CSS', 'JavaScript'],
+            image: 'img/learntheterminal.png',
+            link: 'http://learntheterminal.com'
+        },
+        {
+            title:'P2P Multiplayer Game',
+            description:'A grid based, tactical space shooter. The concept is to use Github as a repository for games. The game files are cloned, and shared between players in a Bittorrent Sync folder. Each player has their own worksheet into which they issue their commands.',
+            technology: ['React', 'HTML', 'CSS', 'JavaScript', 'Bootstrap'],
+            image: 'img/p2p.png',
+            link: 'https://github.com/rtd2/P2P-Game'
+        }
+        {
+            title:'Whose News',
+            description:"Whose News is a concept for a news aggregator that provides the news without knowledge of the source. The idea is to cut through bias in the news.",
+            technology: ['HTML', 'CSS', 'JavaScript'],
+            image: 'img/whosenews.png',
+            link: 'http://whosenews.net/'
+        },
         {
             title:'Laravel Authentication',
             description:'An authentication demo using Laravel. Includes registration, signin, profile page, and password recovery.',
@@ -90,13 +111,7 @@ personalApp.controller('aboutController', function ($scope) {
             link: '/#/code',
             caption: 'Check out of some of the project over in my code samples:'
         },
-        {
-            title:'Learn the Terminal',
-            description:'Learn the Terminal is a terminal simulation in the browser. It started out as a personal project, but developed into a remote collaboration with the goal of introducing non-developer types to the Terminal.',
-            technology: ['HTML', 'CSS', 'JavaScript'],
-            image: 'img/learntheterminal.png',
-            link: 'http://learntheterminal.com'
-        },
+
         {
             title:'Donation Digital',
             description:'Donation Digital is a prototype for a charitable music store. I worked on the design, graphics, Front End, and data integration. It was also a remote collaboration, this time between myself and two other developers.',
@@ -106,24 +121,11 @@ personalApp.controller('aboutController', function ($scope) {
             caption: 'More screenshots:'
         },
         {
-            title:'Kinetic Athletics',
-            description:"An example of a site I designed as a freelancer. This local athletics association needed a central location to provide information to parents and athletes.",
-            technology: ['HTML', 'CSS', 'Bootstrap'],
-            image: 'img/kineticathletics.png'
-        },
-        {
             title:'Design Prototype 1',
             description:'A design prototype I made for a personal site.',
             technology: ['HTML', 'CSS', 'Foundation'],
             image: 'img/designprototype.png',
             link: '/#/demo'
-        },
-        {
-            title:'P2P Multiplayer Game',
-            description:'A grid based, tactical space shooter. The concept is to use Github as a repository for games. The game files are cloned, and shared between players in a Bittorrent Sync folder. Each player has their own worksheet into which they issue their commands.',
-            technology: ['React', 'HTML', 'CSS', 'JavaScript', 'Bootstrap'],
-            image: 'img/p2p.png',
-            link: 'https://github.com/rtd2/alt-multi-tactical'
         }
     ];
 });

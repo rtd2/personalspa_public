@@ -16,6 +16,60 @@
     </div>
 </div>
 
+<hr id="projects"/>
+
+<div class="category">
+    <div class="row fullWidth">
+        <div class="large-offset-1 large-2 columns">
+            <h1>Projects <i class="fi-anchor" style="color: #67A7CD;"></i></h1>
+        </div>
+        <div class="large-3 medium-6 columns">
+            <div class="show-for-large-up"><br/><br/></div>
+            <div ng-repeat="project in projects" ng-if="$index >= 0 && $index <= 1">
+                <h4><a ng-click="filters.title = project.title">{{project.title}}</a></h4>
+            </div>
+        </div>
+        <div class="large-3 medium-6 columns">
+            <div class="show-for-large-up"><br/><br/></div>
+            <div ng-repeat="project in projects" ng-if="$index >= 2 && $index <= 3">
+                <h4><a ng-click="filters.title = project.title">{{project.title}}</a></h4>
+            </div>
+        </div>
+        <div class="large-3 medium-6 columns">
+            <div class="show-for-large-up"><br/><br/></div>
+            <div ng-repeat="project in projects" ng-if="$index >= 4 && $index <= 5">
+                <h4><a ng-click="filters.title = project.title">{{project.title}}</a></h4>
+            </div>
+        </div>
+    </div>
+    <div class="row fullWidth">
+        <div class="large-offset-1 columns">
+        </div>
+        <div class="large-11 medium-12 columns">
+            <hr>
+            <div class="row fullWidth">
+                <div class="large-5 columns">
+                    <div ng-repeat="project in projects | filter:filters">
+                        <h5>{{ project.title }}</h5>
+                        <h6>{{ project.description }}</h6>
+                        <ul>
+                          <li ng-repeat="tech in project.technology">{{ tech }}</li>
+                        </ul>
+                        <p style="color: black;">{{ project.caption }}</p>
+                        <a href="{{ project.link }}">{{ project.link }}</a>
+                    </div>
+                </div>
+                <div class="large-7 columns">
+                    <div ng-repeat="project in projects | filter:filters">
+                        <img src="{{ project.image }}" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br/>
+
 <hr id="experience" style="margin: 0px;"/>
 
 <div class="category">
@@ -235,58 +289,5 @@
     </div>
 </div>
 
-<br/>
-<hr id="projects"/>
-
-<div class="category">
-    <div class="row fullWidth">
-        <div class="large-offset-1 large-2 columns">
-            <h1>Projects <i class="fi-anchor" style="color: #67A7CD;"></i></h1>
-        </div>
-        <div class="large-3 medium-6 columns">
-            <div class="show-for-large-up"><br/><br/></div>
-            <div ng-repeat="project in projects" ng-if="$index >= 0 && $index <= 1">
-                <h4><a ng-click="filters.title = project.title">{{project.title}}</a></h4>
-            </div>
-        </div>
-        <div class="large-3 medium-6 columns">
-            <div class="show-for-large-up"><br/><br/></div>
-            <div ng-repeat="project in projects" ng-if="$index >= 2 && $index <= 3">
-                <h4><a ng-click="filters.title = project.title">{{project.title}}</a></h4>
-            </div>
-        </div>
-        <div class="large-3 medium-6 columns">
-            <div class="show-for-large-up"><br/><br/></div>
-            <div ng-repeat="project in projects" ng-if="$index >= 4 && $index <= 5">
-                <h4><a ng-click="filters.title = project.title">{{project.title}}</a></h4>
-            </div>
-        </div>
-    </div>
-    <div class="row fullWidth">
-        <div class="large-offset-1 columns">
-        </div>
-        <div class="large-11 medium-12 columns">
-            <hr>
-            <div class="row fullWidth">
-                <div class="large-5 columns">
-                    <div ng-repeat="project in projects | filter:filters">
-                        <h5>{{ project.title }}</h5>
-                        <h6>{{ project.description }}</h6>
-                        <ul>
-                          <li ng-repeat="tech in project.technology">{{ tech }}</li>
-                        </ul>
-                        <p style="color: black;">{{ project.caption }}</p>
-                        <a href="{{ project.link }}">{{ project.link }}</a>
-                    </div>
-                </div>
-                <div class="large-7 columns">
-                    <div ng-repeat="project in projects | filter:filters">
-                        <img src="{{ project.image }}" />
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 <br/>
 <hr/>
