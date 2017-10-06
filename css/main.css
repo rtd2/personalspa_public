@@ -1783,6 +1783,11 @@ p {
     text-shadow: 2px 2px 3px rgba(0, 0, 0, .6)
 }
 
+
+#about-header dd{
+    color: #f8f8f8;
+}
+
 #code-header {
     padding-top: 30px;
     color: #f8f8f8;
