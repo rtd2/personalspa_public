@@ -114,7 +114,7 @@ personalApp.controller('aboutController', function ($scope) {
             caption: 'More screenshots:'
         },
         {
-            title:'Design Prototype 1',
+            title:'Design Prototype',
             description:'A design prototype I made for a personal site.',
             technology: ['HTML', 'CSS', 'Foundation'],
             image: 'img/designprototype.png',
